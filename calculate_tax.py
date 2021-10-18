@@ -1,10 +1,10 @@
-from tax import calculate_iss,calculate_icms
+from tax import iss, icms
 
 class calculate_tax(object):
 
     def calculate(self, budget, tax):
 
-        tax = tax(budget)
+        tax = tax.calculate(budget)
         print(tax)
         
 if __name__ == '__main__':
@@ -15,5 +15,5 @@ if __name__ == '__main__':
 
     budget = budget(500)
     
-    calc.calculate(budget,calculate_iss)
-    calc.calculate(budget,calculate_icms)
+    calc.calculate(budget,iss)
+    calc.calculate(budget,icms)

@@ -1,7 +1,9 @@
-def calculate_iss(budget):
+class iss(object):
+    def calculate(budget):
 
-    return budget.amount * 0.1
+        return budget.amount * 0.1
 
-def calculate_icms(budget):
-    
-    return budget.amount * 0.06
+class icms(object):
+    def calculate(budget):
+        
+        return budget.amount * 0.06
